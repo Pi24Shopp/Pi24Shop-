@@ -1,0 +1,23 @@
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا دائرية */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    transition: all 0.2s ease; /* تأثير الانتقال */
+}
+
+button:hover {
+    background-color: #0056b3; /* لون الخلفية عند التحويم */
+    transform: translateY(-2px); /* رفع الزر لأعلى */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); /* تأثير ظل أقوى */
+}
+
+button:active {
+    transform: translateY(2px); /* انزلاق الزر لأسفل عند النقر */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1); /* استعادة الظل الأصلي */
+}
