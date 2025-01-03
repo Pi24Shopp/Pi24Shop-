@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الدفع باستخدام Pi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>منصة الدفع باستخدام Pi</h1>
+        <nav>
+            <ul>
+                <li><a href="#payment-form">إجراء الدفع</a></li>
+                <li><a href="#about">عن المنصة</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="payment-form">
+            <h2>إجراء الدفع</h2>
+            <form>
+                <label for="amount">المبلغ (Pi):</label>
+                <input type="number" id="amount" value="1" min="1" required>
+
+                <label for="memo">ملاحظة:</label>
+                <input type="text" id="memo" placeholder="هذه دفعة تجريبية">
+
+                <button id="pay-button">إجراء الدفع</button>
+            </form>
+            <div id="response" class="response"></div>
+        </section>
+
+        <section id="about">
+            <h2>عن المنصة</h2>
+            <p>تتيح لك هذه المنصة إجراء المدفوعات بسهولة وأمان باستخدام عملة Pi. نحن نهدف إلى توفير تجربة سلسة للمستخدمين.</p>
+        </section>
+
+        <section id="contact">
+            <h2>اتصل بنا</h2>
+            <form id="contactForm">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+</body>
+</html>
